@@ -14,6 +14,66 @@
 </head>
 
 <body>
+
+    <!-- Forms and Inputs-->
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" value="Yash">
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter An Email">
+        </div>
+        <!-- Message -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f" selected>Female</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="birthDate">Birth Date</label><br>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        <!-- Radio Button -->
+        <div>
+            <label for="memberShip">Member Ship</label>
+            <input type="radio" id="memberShip" name="memberShip" value="simple">Simple
+            <input type="radio" id="memberShip" name="memberShip" value="standard" checked>Standard
+            <input type="radio" id="memberShip" name="memberShip" value="super">Super
+        </div>
+        <!-- Check Box -->
+        <div>
+            <label for="memberShip">What You Like</label>
+            <input type="checkbox" id="likes" name="likes" value="cike">Bike
+            <input type="checkbox" id="likes" name="likes" value="car">Car
+            <input type="checkbox" id="likes" name="likes" value="boat">Boat
+        </div>
+        <!-- Submit Button Two ways -->
+        <input type="submit" value="Submit">
+        <!-- Using Button Tag -->
+        <!-- <button type="submit">Submit</button> -->
+        <button type="reset">Reset</button>
+
+        </div>
+    </form>
+
+
     <h1>Welcome to Website!</h1>
     <p>This is first website!</p>
     <!-- This is a Comment -->
@@ -111,7 +171,6 @@
             </tr>
         </tbody>
     </table>
-
 
 
 
