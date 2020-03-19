@@ -1,14 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="This  is website description on Google!"> <!-- Google search description-->
+    <meta name="keywords" content="Yash Learning Web Development"> <!-- Used fir describing the page content-->
+    <meta name="robots" content="NOINDEX, NOFOLLOW"> <!-- For the site to not turn up in search results on Google-->
+
     <title>Modern HTML & CSS From The Beginning (Including Sass)</title>
+
+    <style>
+        .card {
+            border: 1px solid black;
+            background-color: blanchedalmond;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .enhance {
+            color: burlywood;
+            background-color: black;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- HTML Semantic Tags -->
+    <a href="html5_semantics_start.html" id="semanticTags" target="_blank">Semantic Tag Tutorial Original</a><br>
+    <a href="html5_semantics_YI.html" id="semanticTags" target="_blank">Semantic Tag Tutorial Yash Edit</a>
+    
+
+    <!-- Entities -> For better browser rendering -->
+    <!-- Non Breaking Space -->
+    <p>My Name is &nbsp; Yash.</p>
+
+    <!-- Greater than and lesser than -->
+    <p>2 &lt; 5</p>
+    <p>5 &gt; 2</p>
+
+    <!-- copyright and Trademark -->
+    <p>&copy; &reg;</p>
+
+    <!-- Currency -->
+    <p>&pound; &cent; &euro; &#8377;</p>
+
+    <!-- Pack of Cards -->
+    <p>&spades; &clubs; &hearts; &diams;</p>
+
+    <!-- Computer Code -->
+    <code>
+        &lt;?php echo 'Hello World' ?&gt;
+    </code>
+
+    <!-- Keyboard -->
+    <p>Save the file by pressing <kbd>Ctrl + S</kbd></p>
+
+    <!-- Div's, Span's, Classes & ID's -->
+    <div id="main-header">
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <span class="enhance"> adipisicing elit. Non repudiandae </span>
+            reprehenderit accusantium blanditiis
+            quisquam recusandae amet voluptatum. Fugiat, nulla sunt.</p>
+    </div>
+    <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: 13 Maxstoke Gardens</li>
+            <li>Phone: 07870484229</li>
+            <li>Email: yaswanth.iddibani@gmail.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>CopyRight &copy; 2019</p> <!-- Symantic Tags -->
+    </div>
+
+
+    <!-- Block & Inline Elements-->
+    <p style="border: 2px Green solid;">Lorem ipsum dolor sit amet <strong> consectetur adipisicing elit.</strong> Quo
+        explicabo cumque pariatur numquam rem, nesciunt sed
+        perspiciatis dolorem consectetur quasi id sunt, nisi itaque, eveniet magni. Consequuntur dolores consectetur
+        adipisci.</p>
+    <p style="border: 2px red solid;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis velit animi
+        dicta totam impedit, iste
+        reprehenderit voluptatem maiores dolorum exercitationem?</p>
+
+    <a href="#" style="border: 2px Blue solid;">A Link 1</a>
+    <a href="#" style="border: 2px Yellow solid;">A Link 2</a>
+
+    <ul style="border: 2px Black solid;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- Forms and Inputs-->
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" value="Yash">
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter An Email">
+        </div>
+        <!-- Message -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f" selected>Female</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="birthDate">Birth Date</label><br>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        <!-- Radio Button -->
+        <div>
+            <label for="memberShip">Member Ship</label>
+            <input type="radio" id="memberShip" name="memberShip" value="simple">Simple
+            <input type="radio" id="memberShip" name="memberShip" value="standard" checked>Standard
+            <input type="radio" id="memberShip" name="memberShip" value="super">Super
+        </div>
+        <!-- Check Box -->
+        <div>
+            <label for="memberShip">What You Like</label>
+            <input type="checkbox" id="likes" name="likes" value="cike">Bike
+            <input type="checkbox" id="likes" name="likes" value="car">Car
+            <input type="checkbox" id="likes" name="likes" value="boat">Boat
+        </div>
+        <!-- Submit Button Two ways -->
+        <input type="submit" value="Submit">
+        <!-- Using Button Tag -->
+        <!-- <button type="submit">Submit</button> -->
+        <button type="reset">Reset</button>
+
+        </div>
+    </form>
+
+
     <h1>Welcome to Website!</h1>
     <p>This is first website!</p>
-    
+    <!-- This is a Comment -->
+
+    <!-- Headings, Paragraphs & Topography-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 2</h3>
+    <h4>Heading 2</h4>
+    <h5>Heading 2</h5>
+    <h6>Heading 2</h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong> autem distinctio ipsum </strong>provident
+        nostrum laboriosam? Ipsum ducimus consequuntur corrupti? Ex natus ab nisi vel praesentium quas quod
+        reprehenderit
+        deserunt iure culpa at libero, soluta, doloribus unde quibusdam accusantium quaerat tempore recusandae
+        facilis debitis modi vitae? Rem ut <em>iste nulla aliquid corrupti</em> consequatur magni libero sed id, optio
+        cupiditate
+        explicabo expedita?
+        <br>
+        <br>
+
+        reiciendis culpa aliquam voluptates quasi amet velit pariatur tenetur officia rerum
+        <hr> <!-- Horizontal Line -->
+        nihil aut commodi magni eveniet ullam unde quisquam, neque dolores blanditiis? Tempora recusandae odit hic
+        ex quis, nisi quia ullam voluptatem aperiam harum perspiciatis repellendus, animi voluptatum vitae.</p>
+
+
+    <!-- Links, Images and Attributes -->
+    <!-- External Link -->
+    <p>
+        <a href="https://www.google.com">Link to Google</a>
+    </p>
+    <p>
+        <a href="https://www.google.com" target="_blank">Link to Google External</a>
+    </p>
+
+    <!-- Internal Link -->
+    <br>
+    <a href="internalLink.html" target="_blank">Internal Page in Project</a>
+
+    <!-- Images-->
+    <br>
+    <img src="./Images/Image101.jpg" alt="Image Not there" width="200">
+    <img src="https://source.unsplash.com/600x400/?nature,water">
+
+    <!-- Tables & Lists -->
+    <!-- Unordered Lists-->
+    <!-- Used for Navigation Menus & Bar -->
+    <ul style="list-style: lower-alpha">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <!-- Ordered Lists-->
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <!-- Nested Lists -->
+    <ul style="list-style: lower-alpha">
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Nested UL 1</li>
+                <li>Nested UL 2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Tables -->
+    <table style="width: 600px">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yash</td>
+                <td>Iddibani</td>
+                <td>Yaswanth.iddibani@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sai</td>
+                <td>Iddibani</td>
+                <td>Sai.iddibani@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
 </body>
+
 </html>
