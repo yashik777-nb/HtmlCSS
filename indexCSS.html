@@ -8,8 +8,36 @@
     <!-- Internal CSS -->
     <style>
         /* Internal CSS (Ctrl + Forward Slash) */
-        h2{
+        /* # for ID's and . for classes */
+        .welcomePara{
             color: green;
+        }
+
+        #welcome{
+            /* Hash Sign can be used for color codes */
+            background-color: #f4f4f4; 
+        }
+
+        /* Multiple Selectors */
+        #welcome, #about {
+            border: solid 2px #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #about {
+            color: white;
+        }
+
+        /* Nested Selector */
+
+        #welcome p {
+            font-size: 20px;
+        }
+
+        /* Body Styling */
+        body{
+            background-color: #333333;
         }
     </style>
 
@@ -17,6 +45,18 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <!-- Basic CSS Selectors -->
+    <div id="welcome">
+        <h2 id="welcomeParagraph" class="welcomePara">Welcome Paragraph</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quo?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, architecto.</p>
+    </div>
+
+
+
     <!-- Implemmenting CSS -->
 
     <!-- Inline CSS -->
