@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Implementing CSS</title>
 
+    <!-- Fonts from online -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
+
     <!-- Internal CSS -->
     <style>
         /* Internal CSS (Ctrl + Forward Slash) */
@@ -38,6 +41,18 @@
         /* Body Styling */
         body{
             background-color: #333333;
+             font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            /* font-family: 'Roboto', sans-serif; */
+            font-size: 25px;
+            line-height: 1.6em;
+        }
+
+        #welcome p span {
+            font-weight: bold;
+        }
+        #about p span {
+            font-style: italic;
         }
     </style>
 
@@ -45,14 +60,15 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <!-- Basic CSS Selectors -->
+    <!-- Basic CSS Selectors & Fonts -->
+    <!-- Get fonts  from fonts.google.com -->
     <div id="welcome">
         <h2 id="welcomeParagraph" class="welcomePara">Welcome Paragraph</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quo?</p>
+        <p>Lorem ipsum dolor sit <span> consectetur adipisicing elit.</span> Officia, quo?</p>
     </div>
     <div id="about">
         <h2>About</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, architecto.</p>
+        <p>Lorem ipsum, dolor sit amet<span> consectetur adipisicing elit.</span> Sunt, architecto.</p>
     </div>
 
 
