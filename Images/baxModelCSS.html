@@ -6,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model Margin Padding</title>
     <style>
+        /* CSS Browser Reset */
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
 
+        .box {
+            background: #f4f4f4;
+            border: 2px #777777 solid;
+            width: 500px;
+
+            /* Padding on all sides */
+            padding: 20px;
+
+            /* Padding on all sides */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /* Padding Short Hand */
+            padding: 10px 20px 10px 20px;
+
+            /* Padding Short Hand - top/botton right/left */
+            padding: 10px 20px;
+
+            /* Margin on all sides */
+            margin: 10px;
+            
+            /* margin on all sides */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* margin Short Hand */
+            margin: 10px 20px 10px 20px;
+
+            /* margin Short Hand - top/botton right/left */
+            margin: 10px 20px;
+
+        }
+
+        .box h3{
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="box1">
+    <div id="box1" class="box">
         <h3>Box One</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae qui corrupti saepe, voluptatem
             aspernatur dolorum necessitatibus quod numquam atque!F</p>
     </div>
-    <div id="box2">
+    <div id="box2" class="box">
         <h3>Box Two</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae qui corrupti saepe, voluptatem
             aspernatur dolorum necessitatibus quod numquam atque!F</p>
