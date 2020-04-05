@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Port Height and Width</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+            color: white;
+            height: 100Vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0rem;
+        }
+
+        .btn {
+            border: none;
+            display: inline-block;
+            text-decoration: none;
+            background: lightgray;
+            padding: 0.75rem 2rem;
+        }
+
+        @media(max-height:450px) {
+            header {
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut libero ex rerum similique. Nam?</p>
+        <a href="#" class="btn">Find Out More</a>
+    </header>
+
+    <section>
+        <h1>About Our Company</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ab praesentium laboriosam corrupti eum
+            repellat aperiam quis fugiat exercitationem consectetur!</p>
+    </section>
+</body>
+
+</html>
