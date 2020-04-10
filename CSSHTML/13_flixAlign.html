@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Alignment</title>
+    <style>
+        #container {
+            background: lightpink;
+            flex-wrap: wrap;
+            display: flex;
+            /* Horizontal allignment */
+            justify-content: space-evenly;
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                sapce-between
+                space-around
+                space-evenly      
+            */
+            height: 600px;
+
+            /* Vertival Aliignment */
+            align-items: baseline;
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                baseline
+                space-around
+                space-evenly      
+            */
+            /* Align Items vertical where there is extra space*/
+            /* align-content: space-between; */
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                sapce-between
+                space-around
+                space-evenly      
+            */
+        }
+
+        .item-1 {
+            order: 3;
+        }
+
+        .item-2 {
+            /* Allign single item vertical*/
+            order: 2;
+            align-self: flex-end;
+            /*
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                baseline
+                strech     
+            */
+        }
+        .item-3 {
+            order: 1;
+        }
+
+        .item {
+            background: lightgrey;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 1rem;
+            margin: 0.75rem;
+            flex-basis: 200px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item item-1"><h3>Item 1</h3></div>
+        <div class="item item-2"><h3>Item 2</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <!-- <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div> -->
+    </div>
+</body>
+
+</html>
