@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-weight: 200px;
+      }
+      form {
+        padding: 0 2rem;
+        margin: 1rem 0;
+        font-weight: 100;
+      }
+      legend {
+        margin: 1rem 2rem;
+        padding: 1rem 1rem;
+        color: green;
+      }
+      .formbox {
+        margin: 1rem;
+      }
+      .formbox label {
+        display: block;
+        text-align: start;
+        padding-right: 2rem;
+        padding-inline-end: 2rem;
+        font-size: 0.8rem;
+        font-weight: 100;
+        color: #444;
+      }
+      .formbox input {
+        display: block;
+        font-size: 1rem;
+        font-weight: 100;
+        color: #333;
+        position: end;
+        padding: 0.25rem 1rem;
+      }
+      .formbox input:focus {
+        outline: none;
+        border-color: hotpink;
+      }
+      .formbox button {
+        background-color: #4caf50;
+        border: none;
+        color: #fff;
+        padding: 0.25rem 2rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 100;
+        flex-basis: auto;
+        margin-left: 20ch;
+        margin-inline-start: 20ch;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>From Data to Parse form inputs</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form action="#" id="form-group">
+          <fieldset>
+            <legend>Registration</legend>
+            <div class="formbox">
+              <label for="first">First Name:</label>
+              <input
+                type="text"
+                id="first"
+                name="first"
+                autocomplete="off"
+                autocapitalize="on"
+              />
+            </div>
+            <div class="formbox">
+              <label for="last">Last Name:</label>
+              <input
+                type="text"
+                id="last"
+                name="last"
+                autocomplete="off"
+                autocapitalize="on"
+              />
+            </div>
+            <div class="formbox">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="formbox">
+              <label for="pass">Password:</label>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="formbox">
+              <label for="spam">Check Spam</label>
+              <input type="checkbox" name="spam" id="spam" checked />
+            </div>
+            <div class="formbox">
+              <button type="submit" id="btnSubmit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
